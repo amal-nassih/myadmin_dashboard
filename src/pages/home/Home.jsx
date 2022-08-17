@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Featured from "../../components/featured/Featured";
+import Table from "../../components/table/Table";
 import Chart from "../../components/chart/Chart";
 import Widget from "../../widgets/widget";
 
@@ -24,6 +25,14 @@ const Home  = () => {
                     <div className="charts">
                         <Featured/>
                         <Chart/>
+                    </div>
+
+                    <div className="listContainer">
+                        <div className="listTitle">
+                            Last Transactions
+                        </div>
+                        <Table />
+                        
                     </div>
                 </div>
             </div>
